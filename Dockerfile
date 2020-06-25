@@ -19,8 +19,8 @@ RUN mvn clean package
 
 EXPOSE 8081
 
-#REPLACE1
-#REPLACE2
-#REPLACE3
+ADD https://get.aquasec.com/microscanner .
+RUN chmod +x microscanner
+RUN ./microscanner #TOKEN#
 
 CMD mvn cargo:run
