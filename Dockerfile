@@ -8,6 +8,7 @@ RUN apt update
 RUN apt install openjdk-8-jdk -y
 RUN apt install maven -y
 RUN apt install git -y
+RUN pwd
 
 RUN git clone https://github.com/jj-synopsys/insecure-bank
 
