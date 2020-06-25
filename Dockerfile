@@ -19,4 +19,8 @@ RUN mvn clean package
 
 EXPOSE 8081
 
+#REPLACE1
+#REPLACE2
+#REPLACE3
+
 CMD mvn cargo:run
